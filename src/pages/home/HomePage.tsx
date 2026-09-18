@@ -1,135 +1,156 @@
+import { Footer, Header, NavBar } from "@/components/ui";
+
 export const HomePage = () => {
   return (
     <div>
-      <nav className="mb-4 flex items-center justify-between border-b border-b-[#1E293B] px-2 py-4">
-        {/* Logo */}
-        <div className="flex items-center gap-2 px-2">
-          <div className="rounded-lg bg-[#6366F1] p-2">
-            <span className="font-mono font-extrabold">&gt;_</span>
-          </div>
-          <div className="font-sans text-xl font-bold">
-            <h1>CodePointer</h1>
-          </div>
-        </div>
-        {/* Links */}
-        <div className="block sm:hidden">
-          <button>[#]</button>
-        </div>
-        <div className="hidden space-x-4 sm:block">
-          <button className="cursor-pointer rounded-lg border border-[#1E293B] px-4 py-2">
-            <a className="text-sm font-semibold">Entrar</a>
-          </button>
-          <button className="cursor-pointer rounded-lg bg-[#6366F1] px-4 py-2">
-            <a className="text-sm font-semibold">Criar conta</a>
-          </button>
-        </div>
-      </nav>
+      <NavBar />
 
-      <header className="flex flex-col items-center justify-center px-4 py-8">
-        <div className="self-start rounded-lg border border-[#6366F1] bg-[#6365f11a] px-2 py-1 text-xs text-[#6366F1] sm:self-center sm:text-sm">
-          <code>const learning = 'roadmap_unlimited';</code>
-        </div>
+      <Header />
 
-        <div className="space-y-4 py-8 font-sans sm:w-2xl">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-extrabold sm:text-center sm:text-5xl">
-              Domine tecnologia com direção
-            </h2>
-            <p className="text-sm text-[#9CA3AF] sm:text-center">
-              Trilhas de aprendizado estruturadas para você evoluir no seu
-              ritmo, sem se perder no caminho do aprendizado autodidata.
+      <section className="mb-8 flex flex-col items-start justify-between gap-8 border-y border-y-[#1E293B] bg-[#0F152481] px-4 py-6 sm:flex-row sm:items-center md:px-20">
+        <div className="flex w-full flex-row items-center gap-4 sm:w-auto">
+          <div className="rounded-lg bg-[#6365f11a] p-2 text-[#6365f1]">
+            ICO
+          </div>
+
+          <div className="space-y-1">
+            <p className="text-lg font-semibold">Direção clara</p>
+
+            <p className="text-sm text-[#9CA3AF]">Saiba por onde começar.</p>
+          </div>
+        </div>
+        <div className="flex w-full flex-row items-center gap-4 sm:w-auto">
+          <div className="rounded-lg bg-[#63f1951a] p-2 text-[#63f195]">
+            ICO
+          </div>
+
+          <div className="space-y-1">
+            <p className="text-lg font-semibold">Aprendizado flexível</p>
+
+            <p className="text-sm text-[#9CA3AF]">
+              Adapte a trilha ao seu objetivo.
             </p>
           </div>
+        </div>
+        <div className="flex w-full flex-row items-center gap-4 sm:w-auto">
+          <div className="rounded-lg bg-[#f19e631a] p-2 text-[#f19e63]">
+            ICO
+          </div>
 
-          <div className="flex flex-col justify-center gap-4 py-4 text-sm font-bold sm:flex-row">
-            <button className="cursor-pointer rounded-lg bg-[#6366F1] px-6 py-3">
-              <a>Começar agora</a>
-            </button>
-            <button className="cursor-pointer rounded-lg border border-[#1E293B] px-6 py-3">
-              <a>Explorar trilhas</a>
-            </button>
+          <div className="space-y-1">
+            <p className="text-lg font-semibold">Progresso visível</p>
+
+            <p className="text-sm text-[#9CA3AF]">
+              Veja sua evolução acontecer.
+            </p>
           </div>
         </div>
-      </header>
+      </section>
 
-      <section className="px-4 sm:px-8 md:px-14 lg:px-20">
-        <div className="flex items-center justify-between gap-4">
-          <div className="w-40 sm:w-auto">
-            <h2 className="text-3xl font-bold">Trilhas em Destaque</h2>
-          </div>
-          <div className="rounded-lg border border-[#1E293B] p-2">
-            <a className="text-sm font-semibold text-[#6366F1]">
-              Ver todas as trilhas -&gt;
-            </a>
-          </div>
+      <section className="space-y-8 px-4 py-8 md:px-12">
+        <div className="space-y-2">
+          <h3 className="text-2xl font-semibold">Como funciona</h3>
+
+          <p className="text-lg font-medium">
+            Aprenda com um mapa, não com uma prisão
+          </p>
+
+          <p className="text-sm text-[#9CA3AF]">
+            Cada trilha organiza conhecimentos em módulos, tópicos e recursos.
+            Você enxerga uma direção, mas tem liberdade para explorar o que faz
+            sentido agora.
+          </p>
         </div>
-        {/* Cards das Trilhas */}
-        <div className="flex flex-col gap-4 py-10 sm:flex-row">
-          <div className="space-y-4 rounded-2xl border border-[#6366F1] bg-[#0F1524] p-4 shadow-lg">
-            <div className="space-y-2 py-4">
-              <h3 className="text-xl font-bold">Trilha React</h3>
+
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+          <div className="h-full min-h-60 w-full max-w-sm space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
+            <div className="flex flex-row items-center justify-between">
+              <div className="rounded-xl bg-[#56e2bd1a] px-4 py-1">
+                <p className="text-sm font-semibold text-[#56e2bd]">
+                  Iniciante
+                </p>
+              </div>
+              <div>
+                <p>ICO</p>
+              </div>
+            </div>
+
+            <div className="space-y-1.5 py-4">
+              <h3 className="text-base font-bold">Construa a base</h3>
               <p className="text-sm text-[#9CA3AF]">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
-                excepturi.
+                Entenda os conceitos que dão segurança para começar.
               </p>
             </div>
-            <div className="flex items-center gap-2 text-sm text-[#9CA3AF]">
-              <p>12 módulos</p>
-              <span>-</span>
-              <p>9 projetos</p>
-            </div>
-            <div>
-              <button className="cursor-pointer rounded-lg border border-[#1E293B] px-4 py-2">
-                <a className="text-sm font-semibold">Ver trilha -&gt;</a>
-              </button>
+
+            <div className="space-y-2 text-xs text-[#9CA3AF]">
+              <div className="rounded-xl bg-[#172033] px-4 py-2">
+                <p>Lógica de programação</p>
+              </div>
+              <div className="rounded-xl bg-[#172033] px-4 py-2">
+                <p>HTML e CSS</p>
+              </div>
             </div>
           </div>
-          <div className="space-y-4 rounded-2xl border border-[#6366F1] bg-[#0F1524] p-4 shadow-lg">
-            <div className="space-y-2 py-4">
-              <h3 className="text-xl font-bold">Trilha C#</h3>
+
+          <div className="h-full min-h-60 w-full max-w-sm space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
+            <div className="flex flex-row items-center justify-between">
+              <div className="rounded-xl bg-[#75a7ff1a] px-4 py-1">
+                <p className="text-sm font-semibold text-[#75a7ff]">
+                  Intermediário
+                </p>
+              </div>
+              <div>
+                <p>ICO</p>
+              </div>
+            </div>
+
+            <div className="space-y-1.5 py-4">
+              <h3 className="text-base font-bold">Conecte as peças</h3>
               <p className="text-sm text-[#9CA3AF]">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
-                excepturi.
+                Transforme fundamentos em aplicações úteis.
               </p>
             </div>
-            <div className="flex items-center gap-2 text-sm text-[#9CA3AF]">
-              <p>12 módulos</p>
-              <span>-</span>
-              <p>9 projetos</p>
-            </div>
-            <div>
-              <button className="cursor-pointer rounded-lg border border-[#1E293B] px-4 py-2">
-                <a className="text-sm font-semibold">Ver trilha -&gt;</a>
-              </button>
+
+            <div className="space-y-2 text-xs text-[#9CA3AF]">
+              <div className="rounded-xl bg-[#172033] px-4 py-2">
+                <p>JavaScript moderno</p>
+              </div>
+              <div className="rounded-xl bg-[#172033] px-4 py-2">
+                <p>Consumo de APIs</p>
+              </div>
             </div>
           </div>
-          <div className="space-y-4 rounded-2xl border border-[#6366F1] bg-[#0F1524] p-4 shadow-lg">
-            <div className="space-y-2 py-4">
-              <h3 className="text-xl font-bold">Trilha Go</h3>
+
+          <div className="h-full min-h-60 w-full max-w-sm space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
+            <div className="flex flex-row items-center justify-between">
+              <div className="rounded-xl bg-[#ff9b8c1a] px-4 py-1">
+                <p className="text-sm font-semibold text-[#ff9b8c]">Avançado</p>
+              </div>
+              <div>
+                <p>ICO</p>
+              </div>
+            </div>
+
+            <div className="space-y-1.5 py-4">
+              <h3 className="text-base font-bold">Amplie seu repertório</h3>
               <p className="text-sm text-[#9CA3AF]">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
-                excepturi.
+                Aprofunde decisões técnicas e visão de produto.
               </p>
             </div>
-            <div className="flex items-center gap-2 text-sm text-[#9CA3AF]">
-              <p>12 módulos</p>
-              <span>-</span>
-              <p>9 projetos</p>
-            </div>
-            <div>
-              <button className="cursor-pointer rounded-lg border border-[#1E293B] px-4 py-2">
-                <a className="text-sm font-semibold">Ver trilha -&gt;</a>
-              </button>
+
+            <div className="space-y-2 text-xs text-[#9CA3AF]">
+              <div className="rounded-xl bg-[#172033] px-4 py-2">
+                <p>Arquitetura de software</p>
+              </div>
+              <div className="rounded-xl bg-[#172033] px-4 py-2">
+                <p>Deploy e observabilidade</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <footer>
-        <div className="border-t border-t-[#1E293B] px-4 py-6 text-center text-xs text-[#9CA3AF]">
-          <p>&copy; 2026 CodePointer. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
