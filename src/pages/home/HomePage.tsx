@@ -47,7 +47,7 @@ export const HomePage = () => {
         </div>
       </section>
 
-      <section className="space-y-8 px-4 py-8 md:px-12">
+      <section className="space-y-12 px-4 py-8 md:px-12">
         <div className="space-y-2">
           <h3 className="text-2xl font-semibold">Como funciona</h3>
 
@@ -62,8 +62,8 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-          <div className="h-full min-h-60 w-full max-w-sm space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
+        <div className="grid place-content-center gap-6 sm:grid-cols-3">
+          <div className="min-h-65 w-full max-w-lg space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
             <div className="flex flex-row items-center justify-between">
               <div className="rounded-xl bg-[#56e2bd1a] px-4 py-1">
                 <p className="text-sm font-semibold text-[#56e2bd]">
@@ -92,7 +92,7 @@ export const HomePage = () => {
             </div>
           </div>
 
-          <div className="h-full min-h-60 w-full max-w-sm space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
+          <div className="min-h-65 w-full max-w-lg space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
             <div className="flex flex-row items-center justify-between">
               <div className="rounded-xl bg-[#75a7ff1a] px-4 py-1">
                 <p className="text-sm font-semibold text-[#75a7ff]">
@@ -121,7 +121,7 @@ export const HomePage = () => {
             </div>
           </div>
 
-          <div className="h-full min-h-60 w-full max-w-sm space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
+          <div className="min-h-65 w-full max-w-lg space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
             <div className="flex flex-row items-center justify-between">
               <div className="rounded-xl bg-[#ff9b8c1a] px-4 py-1">
                 <p className="text-sm font-semibold text-[#ff9b8c]">Avançado</p>
@@ -144,6 +144,93 @@ export const HomePage = () => {
               </div>
               <div className="rounded-xl bg-[#172033] px-4 py-2">
                 <p>Deploy e observabilidade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="my-16 grid gap-12 bg-[#0F1524] px-4 py-16 sm:grid-cols-2 md:px-12">
+        <div className="space-y-8 py-4">
+          <div className="space-y-3">
+            <div className="text-2xl font-bold">
+              <h3>Acompanhamento</h3>
+            </div>
+            <div className="space-y-2">
+              <p className="text-lg font-medium">
+                Progresso que mostra onde você está
+              </p>
+              <p className="text-sm text-[#9CA3AF]">
+                Marque o que já consolidou, acompanhe o que está estudando e
+                deixe visível o próximo passo da sua trilha.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-2 rounded-2xl border border-[#1E293B] bg-[#0d1220] p-4 shadow-xl">
+            <p className="text-sm font-medium">Você define o ritmo</p>
+            <p className="text-xs text-[#9CA3AF]">
+              Uma pausa não apaga sua evolução. Retome de onde parou quando
+              fizer sentido para você.
+            </p>
+          </div>
+        </div>
+        <div className="max-w-xl space-y-4 rounded-2xl border border-[#1E293B] bg-[#0d1220] p-4 shadow-xl">
+          <div className="flex flex-row items-center justify-between border-b border-b-[#1E293B] pb-4">
+            <div className="space-y-1">
+              <p className="text-sm font-semibold text-[#9CA3AF]">
+                Painel demonstrativo
+              </p>
+              <p className="text-lg font-bold">Trilha: JavaScript essencial</p>
+            </div>
+            <div className="rounded-2xl bg-[#56e2bd1a] px-4 py-1">
+              <p className="text-sm font-semibold text-[#56e2bd]">
+                48% concluído
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="h-2.5 w-full overflow-hidden rounded-full bg-[#172033]">
+              <div className="h-full w-[48%] bg-[#50dbb6]" />
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-row items-center justify-between rounded-2xl border border-[#1db58f] bg-[#1db58f12] p-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex w-8 items-center justify-center rounded-full bg-[#1db58f] text-black">
+                    <span>ICO</span>
+                  </div>
+                  <div className="text-sm font-semibold">
+                    <p>Variáveis e tipos</p>
+                  </div>
+                </div>
+                <div className="text-sm font-semibold text-[#56e2bd]">
+                  <p>Concluído</p>
+                </div>
+              </div>
+              <div className="flex flex-row items-center justify-between rounded-2xl border border-[#4e8cff] bg-[#4e8cff12] p-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex w-8 items-center justify-center rounded-full bg-[#4e8cff] text-black">
+                    <span>ICO</span>
+                  </div>
+                  <div className="text-sm font-semibold">
+                    <p>Funções e tipos</p>
+                  </div>
+                </div>
+                <div className="text-sm font-semibold text-[#4e8cff]">
+                  <p>Em andamento</p>
+                </div>
+              </div>
+              <div className="flex flex-row items-center justify-between rounded-2xl border border-[#263451] bg-[#26345112] p-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex w-8 items-center justify-center rounded-full bg-[#263451] text-black">
+                    <span>ICO</span>
+                  </div>
+                  <div className="text-sm font-semibold">
+                    <p>Manipulação do DOM</p>
+                  </div>
+                </div>
+                <div className="text-sm font-semibold text-[#9CA3AF]">
+                  <p>Próximo</p>
+                </div>
               </div>
             </div>
           </div>
