@@ -1,8 +1,11 @@
-export const FeatureHighlight = ({ ...props }: FeatureHighlight) => {
+export const FeatureHighlight = ({ ...props }: FeatureHighlightType) => {
   const { title, description, icon, iconColor, bgColor } = props;
   return (
     <div className="flex w-full flex-row items-center gap-4 sm:w-auto">
-      <div className={`rounded-lg bg-[${bgColor}] p-2 text-[${iconColor}]`}>
+      <div
+        style={{ color: iconColor, background: bgColor }}
+        className="rounded-lg p-2"
+      >
         {icon}
       </div>
       <div className="space-y-1">
@@ -13,7 +16,7 @@ export const FeatureHighlight = ({ ...props }: FeatureHighlight) => {
   );
 };
 
-type FeatureHighlight = {
+type FeatureHighlightType = {
   title: string;
   description: string;
   icon: React.ReactNode;

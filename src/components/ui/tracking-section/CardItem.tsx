@@ -2,11 +2,13 @@ export const CardItem = ({ ...props }: CardItemType) => {
   const { icon, title, status, color, bgColor, bgIcon, borderColor } = props;
   return (
     <div
-      className={`flex flex-row items-center justify-between rounded-2xl border border-[${borderColor}] bg-[${bgColor}] p-4`}
+      style={{ borderColor, background: bgColor }}
+      className="flex flex-row items-center justify-between rounded-2xl border p-4"
     >
       <div className="flex items-center gap-4">
         <div
-          className={`flex items-center justify-center rounded-full bg-[${bgIcon}] p-2`}
+          style={{ background: bgIcon }}
+          className="flex items-center justify-center rounded-full p-2"
         >
           {icon}
         </div>
@@ -14,7 +16,7 @@ export const CardItem = ({ ...props }: CardItemType) => {
           <p>{title}</p>
         </div>
       </div>
-      <div className={`text-sm font-semibold text-[${color}]`}>
+      <div style={{ color }} className="text-sm font-semibold">
         <p>{status}</p>
       </div>
     </div>

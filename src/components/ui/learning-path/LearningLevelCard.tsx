@@ -3,10 +3,13 @@ export const LearningLevelCard = ({ ...props }: LearningLevelCardType) => {
   return (
     <div className="min-h-65 w-full max-w-lg space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
       <div className="flex flex-row items-center justify-between">
-        <div className={`rounded-xl bg-[${bgColor}] px-4 py-1`}>
-          <p className={`text-sm font-semibold text-[${color}]`}>{level}</p>
+        <div
+          style={{ background: bgColor, color }}
+          className="rounded-xl px-4 py-1"
+        >
+          <p className="text-sm font-semibold">{level}</p>
         </div>
-        <div className={`text-[${color}]`}>{icon}</div>
+        <div style={{ color }}>{icon}</div>
       </div>
 
       <div className="space-y-1.5 py-4">
