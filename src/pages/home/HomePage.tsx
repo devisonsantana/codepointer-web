@@ -5,21 +5,20 @@ import {
   LearningPath,
   NavBar,
   ProgressSection,
+  ProjectSection,
 } from "@/components/ui";
 
 export const HomePage = () => {
   return (
     <>
       <NavBar />
-
       <Header />
-
-      <FeatureHighlights />
-
-      <LearningPath />
-
-      <ProgressSection />
-
+      <main className="space-y-24">
+        <FeatureHighlights />
+        <LearningPath />
+        <ProgressSection />
+        <ProjectSection />
+      </main>
       <Footer />
     </>
   );

@@ -2,7 +2,7 @@ export const ProgressInfo = () => {
   return (
     <div className="space-y-8 py-4">
       <div className="space-y-3">
-        <div className="text-2xl font-bold">
+        <div className="text-2xl font-semibold">
           <h3>Acompanhamento</h3>
         </div>
         <div className="space-y-2">

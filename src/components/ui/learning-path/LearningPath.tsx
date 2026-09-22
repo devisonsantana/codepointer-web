@@ -1,22 +1,11 @@
 import { LearningLevelCard } from "../learning-level-card/LearningLevelCard";
 import { LuGitBranch, LuLayers, LuSprout } from "react-icons/lu";
+import { LearningPathInfo } from "../learning-path-info/LearningPathInfo";
 
 export const LearningPath = () => {
   return (
     <section className="space-y-12 px-4 py-8 md:px-12">
-      <div className="space-y-2">
-        <h3 className="text-2xl font-semibold">Como funciona</h3>
-
-        <p className="text-lg font-medium">
-          Aprenda com um mapa, não com uma prisão
-        </p>
-
-        <p className="text-sm text-[#9CA3AF]">
-          Cada trilha organiza conhecimentos em módulos, tópicos e recursos.
-          Você enxerga uma direção, mas tem liberdade para explorar o que faz
-          sentido agora.
-        </p>
-      </div>
+      <LearningPathInfo />
 
       <div className="grid place-content-center gap-6 sm:grid-cols-3">
         {learningLevels.map((learningLevel, idx) => (
