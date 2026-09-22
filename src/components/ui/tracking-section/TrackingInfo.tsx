@@ -1,18 +1,18 @@
+import { SectionDescription } from "../section/SectionDescription";
+import { SectionText } from "../section/SectionText";
+import { SectionTitle } from "../section/SectionTitle";
+
 export const TrackingInfo = () => {
   return (
     <div className="space-y-8 py-4">
       <div className="space-y-3">
-        <div className="text-2xl font-semibold">
-          <h3>Acompanhamento</h3>
-        </div>
+        <SectionTitle>Acompanhamento</SectionTitle>
         <div className="space-y-2">
-          <p className="text-lg font-medium">
-            Progresso que mostra onde você está
-          </p>
-          <p className="text-sm text-[#9CA3AF]">
+          <SectionText>Progresso que mostra onde você está</SectionText>
+          <SectionDescription>
             Marque o que já consolidou, acompanhe o que está estudando e deixe
             visível o próximo passo da sua trilha.
-          </p>
+          </SectionDescription>
         </div>
       </div>
       <div className="space-y-2 rounded-2xl border border-[#1E293B] bg-[#0d1220] p-4 shadow-xl">

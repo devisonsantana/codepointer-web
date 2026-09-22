@@ -1,11 +1,8 @@
 import { Link } from "react-router";
 import { Button } from "../button/Button";
+import { links } from "./data";
 
-export const GroupNavLinks = ({
-  onClick,
-}: {
-  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
-}) => {
+export const GroupNavLinks = ({ onClick }: GroupNavLinksType) => {
   return links.map(({ text, style, to }, idx) => (
     <Button style={style} key={idx}>
       <Link to={to} className="text-sm font-semibold" onClick={onClick}>
@@ -15,21 +12,6 @@ export const GroupNavLinks = ({
   ));
 };
 
-const links: LinkType[] = [
-  {
-    text: "Entrar",
-    style: "secondary",
-    to: "/login",
-  },
-  {
-    text: "Criar conta",
-    style: "primary",
-    to: "/register",
-  },
-];
-
-type LinkType = {
-  text: string;
-  style: "primary" | "secondary";
-  to: string;
+type GroupNavLinksType = {
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };

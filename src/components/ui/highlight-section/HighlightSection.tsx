@@ -1,7 +1,5 @@
 import { FeatureHighlight } from "./FeatureHighlight";
-import { FaRegMap } from "react-icons/fa";
-import { PiPath } from "react-icons/pi";
-import { LuChartNoAxesCombined } from "react-icons/lu";
+import { featureHighlights } from "./data";
 
 export const HighlightSection = () => {
   return (
@@ -12,27 +10,3 @@ export const HighlightSection = () => {
     </section>
   );
 };
-
-const featureHighlights = [
-  {
-    title: "Direção clara",
-    description: "Saiba por onde começar.",
-    icon: <FaRegMap size={22} />,
-    iconColor: "#6365f1",
-    bgColor: "#6365f11a",
-  },
-  {
-    title: "Aprendizado flexível",
-    description: "Adapte a trilha ao seu objetivo.",
-    icon: <PiPath size={22} />,
-    iconColor: "#63f195",
-    bgColor: "#63f1951a",
-  },
-  {
-    title: "Progresso visível",
-    description: "Veja sua evolução acontecer.",
-    icon: <LuChartNoAxesCombined size={22} />,
-    iconColor: "#ff9b8c",
-    bgColor: "#ff9b8c1a",
-  },
-];
