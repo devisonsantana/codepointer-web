@@ -1,4 +1,4 @@
-export const ProgressInfo = () => {
+export const TrackingInfo = () => {
   return (
     <div className="space-y-8 py-4">
       <div className="space-y-3">

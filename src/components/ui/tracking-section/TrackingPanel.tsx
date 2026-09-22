@@ -1,10 +1,10 @@
 import { LuCheck } from "react-icons/lu";
-import { ProgressBar } from "../progress-bar/ProgressBar";
-import { ProgressCardItem } from "../progress-card-item/ProgressCardItem";
+import { ProgressBar } from "./ProgressBar";
+import { CardItem } from "./CardItem";
 import { FaRegCircle } from "react-icons/fa";
 import { VscPlay } from "react-icons/vsc";
 
-export const ProgressCard = () => {
+export const TrackingPanel = () => {
   return (
     <div className="max-w-xl space-y-4 rounded-2xl border border-[#1E293B] bg-[#0d1220] p-4 shadow-xl">
       <div className="flex flex-row items-center justify-between gap-4 border-b border-b-[#1E293B] pb-4">
@@ -26,7 +26,7 @@ export const ProgressCard = () => {
 
         <div className="flex flex-col gap-4">
           {cardItems.map((item, idx) => (
-            <ProgressCardItem key={idx} {...item} />
+            <CardItem key={idx} {...item} />
           ))}
         </div>
       </div>

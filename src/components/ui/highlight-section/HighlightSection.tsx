@@ -1,9 +1,9 @@
-import { FeatureHighlight } from "../feature-highlight/FeatureHighlight";
+import { FeatureHighlight } from "./FeatureHighlight";
 import { FaRegMap } from "react-icons/fa";
 import { PiPath } from "react-icons/pi";
 import { LuChartNoAxesCombined } from "react-icons/lu";
 
-export const FeatureHighlights = () => {
+export const HighlightSection = () => {
   return (
     <section className="flex flex-col items-start justify-between gap-8 border-y border-y-[#1E293B] bg-[#0F152481] px-4 py-6 sm:flex-row sm:items-center md:px-20">
       {featureHighlights.map((feature, idx) => (

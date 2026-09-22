@@ -1,4 +1,4 @@
-export const LearningLevelCard = ({ ...props }: LearningLevelCard) => {
+export const LearningLevelCard = ({ ...props }: LearningLevelCardType) => {
   const { level, color, bgColor, icon, title, description, topics } = props;
   return (
     <div className="min-h-65 w-full max-w-lg space-y-1 rounded-2xl border border-[#6366F1] bg-[#0F152481] p-4 shadow-xl">
@@ -25,7 +25,7 @@ export const LearningLevelCard = ({ ...props }: LearningLevelCard) => {
   );
 };
 
-type LearningLevelCard = {
+type LearningLevelCardType = {
   level: string;
   color: string;
   bgColor: string;

@@ -1,4 +1,4 @@
-export const ProjectSectionCard = ({ ...props }: ProjectSectionCard) => {
+export const ProjectSectionCard = ({ ...props }: ProjectSectionCardType) => {
   const { level, title, description, icon, color, bgColor } = props;
   return (
     <div className="flex flex-col gap-6 rounded-2xl border border-[#1E293B] bg-[#0d1220] px-4 py-6 shadow-xl transition-all duration-300 ease-out hover:-translate-y-1">
@@ -20,7 +20,7 @@ export const ProjectSectionCard = ({ ...props }: ProjectSectionCard) => {
   );
 };
 
-type ProjectSectionCard = {
+type ProjectSectionCardType = {
   level: string;
   title: string;
   description: string;

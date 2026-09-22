@@ -1,6 +1,6 @@
-import { LearningLevelCard } from "../learning-level-card/LearningLevelCard";
+import { LearningLevelCard } from "./LearningLevelCard";
 import { LuGitBranch, LuLayers, LuSprout } from "react-icons/lu";
-import { LearningPathInfo } from "../learning-path-info/LearningPathInfo";
+import { LearningPathInfo } from "./LearningPathInfo";
 
 export const LearningPath = () => {
   return (

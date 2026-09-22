@@ -1,4 +1,4 @@
-export const ProgressCardItem = ({ ...props }: ProgressCardItem) => {
+export const CardItem = ({ ...props }: CardItemType) => {
   const { icon, title, status, color, bgColor, bgIcon, borderColor } = props;
   return (
     <div
@@ -21,7 +21,7 @@ export const ProgressCardItem = ({ ...props }: ProgressCardItem) => {
   );
 };
 
-type ProgressCardItem = {
+type CardItemType = {
   icon: React.ReactNode;
   title: string;
   status: string;

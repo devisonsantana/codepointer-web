@@ -1,10 +1,10 @@
 import {
-  FeatureHighlights,
+  HighlightSection,
   Footer,
   Header,
   LearningPath,
   NavBar,
-  ProgressSection,
+  TrackingSection,
   ProjectSection,
 } from "@/components/ui";
 
@@ -14,9 +14,9 @@ export const HomePage = () => {
       <NavBar />
       <Header />
       <main className="space-y-24">
-        <FeatureHighlights />
+        <HighlightSection />
         <LearningPath />
-        <ProgressSection />
+        <TrackingSection />
         <ProjectSection />
       </main>
       <Footer />
